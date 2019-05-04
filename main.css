@@ -18,7 +18,7 @@ img {
   height: 100%; /* Full height (cover the whole page) */
   top: 0;
   left: 0;
-  right: 0;
+  right: 0;;
   bottom: 0;
   background-color: none; /* Black background with opacity */
   z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
@@ -27,13 +27,15 @@ img {
   transition-delay: 3s;
 }
 
-#nav-item {
+.nav-item {
     position: relative; /* Sit on top of the page content */
     display: flex;
-    background: green; /* Hidden by default */
+    border: none;
+    background: none; /* Hidden by default */
     width: 120px; /* Full width (cover the whole page) */
     height: 30px; /* Full height (cover the whole page) */
     color: white; 
+    
 }
 
 #display-content {

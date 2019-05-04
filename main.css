@@ -7,11 +7,15 @@ img {
   height: 100vh;
  
 }
+#main-container {
+  width: 100vw;
+  height: 100vh;
+}
 #display-menu {
   position: fixed; /* Sit on top of the page content */
   display: none; /* Hidden by default */
-  width: 150px; /* Full width (cover the whole page) */
-  height: 200px; /* Full height (cover the whole page) */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
   top: 0;
   left: 0;
   right: 0;
@@ -22,32 +26,16 @@ img {
   transition-timing-function: ease;
   transition-delay: 3s;
 }
-li {
-  width: 100%;
-  height: 2em;
-  position: relative;
-  top: 30%;
-  left: 50%;
-  font-size: 25px;
-  color: white;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  list-style: none;
+
+#nav-item {
+    position: relative; /* Sit on top of the page content */
+    display: flex;
+    background: green; /* Hidden by default */
+    width: 120px; /* Full width (cover the whole page) */
+    height: 30px; /* Full height (cover the whole page) */
+    color: white; 
 }
+
 #display-content {
-    position: fixed; /* Sit on top of the page content */
-    display: none; /* Hidden by default */
-    width: 50%; /* Full width (cover the whole page) */
-    height: 50%; /* Full height (cover the whole page) */
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
-    z-index: 0; /* Specify a stack order in case you're using a different order for other elements */
-    cursor: pointer; /* Add a pointer on hover */
-  }
-@keyframes move {
-  from {right: 100%;}
-  to 
+  display: none;
 }
